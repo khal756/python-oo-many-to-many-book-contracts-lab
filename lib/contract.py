@@ -1,18 +1,18 @@
-from lib.author import Author
-from lib.book import Book
-
 class Contract:
     all = []
 
     def __init__(self, author, book, date, royalties):
+        from author import Author
+        from book import Book
+
         if not isinstance(author, Author):
-            raise TypeError("author must be an Author instance")
+            raise TypeError("author must be Author instance")
         if not isinstance(book, Book):
-            raise TypeError("book must be a Book instance")
+            raise TypeError("book must be Book instance")
         if not isinstance(date, str):
-            raise TypeError("date must be a string")
+            raise TypeError("date must be string")
         if not isinstance(royalties, int):
-            raise TypeError("royalties must be an int")
+            raise TypeError("royalties must be int")
 
         self.author = author
         self.book = book
