@@ -1,4 +1,6 @@
-from many_to_many import Author, Book, Contract
+from lib.book import Book
+from lib.author import Author
+from lib.contract import Contract
 import pytest
 
 def test_book_init():
