@@ -18,7 +18,6 @@ class Contract:
         self.book = book
         self.date = date
         self.royalties = royalties
-
         Contract.all.append(self)
 
     @classmethod
